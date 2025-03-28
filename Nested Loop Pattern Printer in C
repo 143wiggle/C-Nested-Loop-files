@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int rows, inside;
+
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter number of inside: ");
+    scanf("%d", &inside);
+
+    for (int i = 1; i <= rows; i++) {
+        for (int j = 1; j <= inside; j++) {
+            printf("%d ", j);
+        }
+        printf("\n"); // Moved inside the outer loop
+    }
+
+    return 0;
+}
